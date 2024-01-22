@@ -21,6 +21,18 @@
             console.log("promesa cumplida");
         });
 
+        let saluda = new Promise(callback => {
+            setTimeout(() =>{
+
+                callback();
+
+            }, Math.random() * 2000);
+        });
+
+        prueba.then(() => {
+            console.log("hola");
+        });
+
     </script>
 
 </body>
