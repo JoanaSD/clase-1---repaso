@@ -19,9 +19,15 @@
 
         (async() => {
 
-            let resultado = await prueba();
+            try {
 
-            console.log(resultado);
+                let resultado = await prueba();
+
+                console.log(resultado);
+
+            }catch(excepcion){
+                console.log(excepcion);
+            }
 
         })();
 
